@@ -4,7 +4,7 @@ html{
 main{
     display: flex;
 }
-formulario, #itens{
+form, #itens{
     width: 200px;
 }
 #itens{
