@@ -4,7 +4,7 @@ html{
 main{
     display: flex;
 }
-formulario, #itens{
+form, #itens{
     width: 200px;
 }
 #itens{
@@ -21,4 +21,8 @@ header h1{
 header h2{
     margin-top: 0.2rem;
     opacity: 0.6;
+}
+header{
+    color: white;
+    background-color: black;
 }
