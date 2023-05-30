@@ -1,17 +1,19 @@
-    const form = document.forms.entrada;
-    form.addEventListener('submit', envia);
+import { estado } from "./store.js";
 
-    let estado = 0;
+
+const form = document.forms.entrada;
+form.addEventListener('submit', envia);
+
+atualiza();
+
+function envia(evento){
+    evento.preventDefault();
+    console.log('Formulário enviado!!');
+    estado++;   
     atualiza();
-    
-    function envia(evento){
-        evento.preventDefault();
-        console.log('Formulário enviado!!');
-        estado++;   
-        atualiza();
-    }
+}
 
-    function atualiza(){
-        const ol = document.querySelector('ol');
-        ol.innerHTML = `<li>${estado}</li>`;
-    }
+function atualiza(){
+    const ol = document.querySelector('ol');
+    ol.innerHTML = `<li>${estado}</li>`;
+}
